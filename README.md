@@ -1,4 +1,4 @@
-
+![Interfaccia del Chatbot WiData](screenshot.png)
 # 🤖 Chatbot WiData
 
 <!-- Badge dello stack tecnologico -->
