@@ -56,12 +56,22 @@ streamlit run app.py
 ## 📍 Posizionamento Crawl-Walk-Run
 
 <!-- TODO: dove si posiziona il chatbot e perché -->
-Il chatbot si posiziona in zona **WALK** perché...
+Il chatbot si posiziona in zona **WALK** perché ha un'interfaccia grafica interattiva: Non è più un semplice script eseguito riga per riga nel terminale (fase Crawl), ma utilizza Streamlit per offrire una UI navigabile e user-friendly.
+
+È accessibile online: È stato portato fuori dall'ambiente locale (localhost) ed è deployato in cloud, permettendo a qualsiasi utente di utilizzarlo tramite un URL pubblico.
+
+Mantiene il contesto: Grazie all'uso di st.session_state, gestisce la memoria della conversazione e non tratta ogni messaggio come una singola chiamata API isolata.
+
+Gestisce parametri dinamici: Permette all'utente di modificare in tempo reale impostazioni come la Temperature tramite una sidebar.
 
 ## 🔮 Passo successivo
 
 <!-- TODO: cosa fareste per portarlo a RUN -->
-Per avanzare verso RUN implementeremmo...
+Per avanzare verso RUN implementerei l'integrazione di un sistema RAG (Retrieval-Augmented Generation) completo utilizzando ChromaDB e PyPDF (già predisposti nel requirements.txt) per permettere al chatbot di rispondere basandosi su documenti aziendali proprietari.
+
+Un sistema di autenticazione per limitare l'accesso solo agli utenti autorizzati.
+
+Il salvataggio persistente delle conversazioni su un database esterno (es. PostgreSQL o MongoDB) per avere uno storico delle chat e fare analisi sui log.
 
 ---
 *Progetto realizzato durante il corso AI Engineering Fundamentals*
