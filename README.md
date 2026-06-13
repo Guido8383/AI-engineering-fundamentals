@@ -1,4 +1,5 @@
-![Interfaccia del Chatbot WiData](screenshot.png)
+<img width="1907" height="957" alt="screenshot " src="https://github.com/user-attachments/assets/9a94598e-38c7-46b3-8d3f-bcaeaa45bae3" />
+
 # 🤖 Chatbot WiData
 
 <!-- Badge dello stack tecnologico -->
