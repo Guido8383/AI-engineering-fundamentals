@@ -14,7 +14,7 @@ Il Chatbot WiData è un assistente virtuale intelligente sviluppato per supporta
 ## 🚀 Demo
 
 <!-- TODO: link a Streamlit Cloud quando deployato -->
-**Live**: [chatbot-widata.streamlit.app]([https://...](https://ai-engineering-fundamentals-birqdcu9nkygcvgpd6wons.streamlit.app/))
+**Live**: [chatbot-widata.streamlit.app]([(https://ai-engineering-fundamentals-birqdcu9nkygcvgpd6wons.streamlit.app/))]
 
 ## ✨ Funzionalità
 
