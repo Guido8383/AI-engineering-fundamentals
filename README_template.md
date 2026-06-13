@@ -9,7 +9,7 @@
 ## 📋 Descrizione
 
 <!-- TODO: 2-3 frasi che spiegano cosa fa il chatbot -->
-...
+Il Chatbot WiData è un assistente virtuale intelligente sviluppato per supportare le attività e l'operatività di WiData Srl, startup IoT con sede a Sassari. L'applicazione offre un'interfaccia web intuitiva e personalizzabile, progettata per interagire con gli utenti fornendo risposte rapide, coerenti e strettamente aderenti al contesto aziendale.
 
 ## 🚀 Demo
 
@@ -19,21 +19,30 @@
 ## ✨ Funzionalità
 
 <!-- TODO: lista delle features principali -->
-- ...
+Interazione in Real-Time: Conversazioni fluide con streaming progressivo del testo (effetto macchina da scrivere).
+
+Gestione del Contesto: Memoria integrata (Session State) che permette al chatbot di ricordare i messaggi precedenti durante la singola sessione.
+
+Parametri Dinamici: Sidebar interattiva per la regolazione della "Temperature", che permette all'utente di bilanciare la precisione e la creatività del modello.
+
+Isolamento del Dominio: System prompt customizzato per garantire che l'assistente rimanga nel proprio ruolo e risponda solo a temi pertinenti all'azienda.
+
+Predisposizione RAG: Infrastruttura di base già configurata per l'integrazione e l'interrogazione di documenti proprietari.
 
 ## 🛠 Stack tecnologico
 
 <!-- TODO: tecnologie usate con descrizione breve -->
 | Tecnologia | Uso |
 |------------|-----|
-| Claude Haiku | ... |
-| ChromaDB | ... |
-| Streamlit | ... |
+| Claude Haiku | Motore LLM (Large Language Model) veloce ed efficiente per la generazione e la comprensione del linguaggio naturale. |
+| ChromaDB | Database vettoriale locale per l'archiviazione e il recupero semantico delle informazioni (Retrieval). |
+| Streamlit | Framework Python per lo sviluppo e il deploy rapido dell'interfaccia grafica (Frontend). |
+|PyPDF & Sentence-Transformers | Strumenti per l'estrazione del testo dai documenti e la generazione degli embedding vettoriali.|
 
 ## 📐 Architettura
 
 <!-- TODO: descrizione del flusso RAG + tool in 3-4 righe -->
-...
+L'applicazione si basa su un flusso client-server leggero orchestrato tramite Streamlit. L'input dell'utente viene intercettato dalla UI, arricchito con il System Prompt aziendale e lo storico della chat, per poi essere inviato tramite chiamata API al modello Anthropic Claude. L'architettura è progettata in ottica RAG (Retrieval-Augmented Generation): l'inclusione di ChromaDB e modelli di embedding pone le basi per un imminente aggancio a una knowledge base documentale (es. manuali IoT, report), permettendo al LLM di generare risposte basate su dati vettorializzati e recuperati in tempo reale
 
 ## ⚙️ Esecuzione in locale
 
