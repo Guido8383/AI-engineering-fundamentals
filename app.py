@@ -12,7 +12,12 @@ if "ANTHROPIC_API_KEY" in st.secrets:
 
 client = anthropic.Anthropic()
 
-SYSTEM = "Sei l'assistente di WiData Srl, startup IoT di Sassari."
+SYSTEM = """
+Sei l'assistente virtuale di WiData Srl, una startup IoT di Sassari.
+Il tuo compito è rispondere SOLO a domande riguardanti l'azienda, i sensori IoT, la tecnologia o la programmazione correlata.
+
+REGOLA TASSATIVA: Se l'utente ti fa domande fuori da questo ambito (ad esempio cucina, ricette, sport, gossip o argomenti generali), devi rifiutarti in modo cortese ma fermo, dicendo che puoi parlare solo dei progetti e della tecnologia di WiData Srl.
+"""
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
